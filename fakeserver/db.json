@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Hello World",
+      "author": "tester"
+    },
+    {
+      "id": "2",
+      "title": "Fake API",
+      "author": "tester"
+    },
+    {
+      "id": "3",
+      "title": "Hello World",
+      "author": "patch"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "Nice post!",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Test User"
+  }
+}
