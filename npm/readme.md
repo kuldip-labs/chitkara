@@ -19,6 +19,10 @@ console.log(helloNpm())`.
 * `npm login`
 * `npm publish`
 
+#### rePublish npm package 
+* update Patch, Minor or Major version to republish
+*  `npm publish`
+
 ## Scoped npm package
 * `npm init --scope=@your-username`
 * package name `@your-username/package-name`
