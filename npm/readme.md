@@ -4,15 +4,15 @@
 * create custom importable module
 * npm init -y
 * index.js
-`function helloNpm() {
-  return "hello NPM"
+`function helloNpmWorld() {
+  return "hello NPM World"
 }
-module.exports = helloNpm`
+module.exports = helloNpmWorld`
 #### Testing
 * `npm link` to make package available globally
 * create test.js in test folder `const helloNpm = require('package-name')
 console.log(helloNpm())`.
-* `npm link package-name` will create node_module and package-name in it.
+* `npm link chitkara-kuldipprajapati` will create node_module and package-name in it.
 * run `node test.js`
 
 #### Publish npm package
@@ -28,5 +28,9 @@ console.log(helloNpm())`.
 * package name `@your-username/package-name`
 * `npm publish --access public`
 * `npm publish --access private`
+
+## Deprecate npm package
+* `npm deprecate chitkara-kuldipprajapati@"< 2.0.0" "critical bug fixed in v2.0.0"`
+* When will you try to install 1.0.0 npm will warn "npm warn deprecated chitkara-kuldipprajapati@1.0.0: critical bug fixed in v2.0.0" in terminal
 
 

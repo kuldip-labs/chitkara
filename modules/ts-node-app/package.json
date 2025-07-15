@@ -1,7 +1,11 @@
 {
   "devDependencies": {
     "@types/node": "^24.0.12",
+    "lodash": "^4.17.21",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "chitkara-kuldipprajapati": "^1.0.1"
   }
 }

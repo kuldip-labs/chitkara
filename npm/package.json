@@ -1,6 +1,6 @@
 {
   "name": "chitkara-kuldipprajapati",
-  "version": "1.0.1",
+  "version": "2.0.2",
   "description": "* Signup https://www.npmjs.com/signup\r * Decide npm package which is not available on npm registry and put as package-name in package.json \r * create custom importable module\r * npm init -y\r * index.js\r `function helloNpm() {\r   return \"hello NPM\"\r }\r module.exports = helloNpm`\r #### Testing\r * `npm link` to make package available globally\r * create test.js in test folder `const helloNpm = require('package-name')\r console.log(helloNpm())`.\r * `npm link package-name` will create node_module and package-name in it.\r * run `node test.js`",
   "main": "index.js",
   "scripts": {
