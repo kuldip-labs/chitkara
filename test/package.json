@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "chitkara-kuldipprajapati": "^1.0.0"
+    "chitkara-kuldipprajapati": "^1.0.0",
+    "lodash": "^4.0.21"
   }
 }
