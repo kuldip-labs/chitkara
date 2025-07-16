@@ -1,0 +1,17 @@
+{
+  "name": "grpc",
+  "version": "1.0.0",
+  "description": "* Initialize Node.js project: npm init -y\r * Install dependencies: npm install @grpc/grpc-js @grpc/proto-loader\r * Create the hello.proto file.\r * Create the server.js and client.js files.\r * Start the server: node server.js\r * Run the client: node client.js",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15"
+  }
+}
