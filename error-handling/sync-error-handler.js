@@ -24,11 +24,5 @@
         // Perform cleanup and exit gracefully
         process.exit(1);
     });
-
-    // Handle unhandled promise rejections
-    // This is a global error handler for unhandled promise rejections
-        process.on('unhandledRejection', (reason, promise) => {
-        console.error('Unhandled Rejection at:', promise, 'reason:', reason);
-        // Log the error and potentially exit
-    });
+    
     
