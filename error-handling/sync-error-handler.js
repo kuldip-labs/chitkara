@@ -1,28 +1,12 @@
-    // This code demonstrates how to use try-catch for error handling in JavaScript.
-    try {
-        // Code that might throw an error
-        const result = someFunctionThatMightFail();
-        console.log(result);
-    } catch (error) {
-        // Handle the error
-        console.error("An error occurred:", error.message);
-    }
+process.on('uncaughtException', (err) => {
+  console.error('Caught unhandled exception:', err);
+  // Perform synchronous cleanup here before exiting
+  process.exit(1); // Exit the process after logging the error
+});
 
-    // Example of reading a file with error handling
-        fs.readFileSync('nonexistent.txt', (err, data) => {
-        if (err) {
-            console.error("Error reading file:", err);
-            return;
-        }
-        console.log("File content:", data.toString());
-    });
+function riskySynchronousOperation() {
+  throw new Error('Something went wrong in a synchronous operation!');
+}
 
-      // Handle uncaught exceptions
-    // This is a global error handler for uncaught exceptions
-        process.on('uncaughtException', (err) => {
-        console.error('Uncaught Exception:', err);
-        // Perform cleanup and exit gracefully
-        process.exit(1);
-    });
-    
-    
+riskySynchronousOperation();
+console.log('This line will not be reached if an uncaught exception occurs.');
