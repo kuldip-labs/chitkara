@@ -1,5 +1,5 @@
 /* single Observer class that maintains the state and also triggers the subscribers of the observer.*/
-import Observer from './observer.js';
+import Observer from './Observer.js';
 const observer = new Observer();
 
 // Returns a function which, when called, unsubscribes from the observer.
