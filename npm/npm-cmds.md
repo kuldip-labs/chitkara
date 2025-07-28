@@ -23,7 +23,7 @@
 | ---                     | ---                                                                 |
 | `npm list`              | Lists the installed versions of all dependencies in this software   | 
 | `npm list -g --depth 0` | Lists the installed versions of all globally installed packages     | 
-| `npm view`              | Lists the latest versions of all dependencies in this software      | 
+| `npm view`              | To view information about the package from the registry,software      | 
 | `npm outdated`          | Lists only the dependencies in this software which are outdated     |
 
 ### Updating

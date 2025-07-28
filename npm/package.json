@@ -1,12 +1,26 @@
 {
   "name": "chitkara-kuldipprajapati",
-  "version": "2.0.2",
-  "description": "* Signup https://www.npmjs.com/signup\r * Decide npm package which is not available on npm registry and put as package-name in package.json \r * create custom importable module\r * npm init -y\r * index.js\r `function helloNpm() {\r   return \"hello NPM\"\r }\r module.exports = helloNpm`\r #### Testing\r * `npm link` to make package available globally\r * create test.js in test folder `const helloNpm = require('package-name')\r console.log(helloNpm())`.\r * `npm link package-name` will create node_module and package-name in it.\r * run `node test.js`",
+  "version": "2.0.3",
+  "description": "An educational npm module demonstrating the fundamental steps of creating and publishing a Node.js package.",
   "main": "index.js",
+  "keywords": [
+  "npm",
+  "module",
+  "package",
+  "nodejs",
+  "javascript",
+  "tutorial",
+  "education",
+  "example",
+  "how-to"
+],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kuldip-labs/chitkara.git"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+
   "author": "",
   "license": "ISC"
 }
